@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="JavaScript, Canvas, Conway, Game of Life">
+		<meta name="description" content="Simple Replica Of Conway's Game Of Life Written In JavaScript">
+		<meta name="author" content="mrtmash">
+		<title>Miss Shadow</title>
+		<link rel="icon" type="image/png" href="icon.png">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<canvas id="canvas-main"></canvas>
+		<div id="button-container">
+			<button id="play-btn" class="button-base" onClick="playPause()">PLAY</button>
+			<button id="reset-btn" class="button-base" onClick="resetWorld()">RESET</button>
+			<div>
+				<input id="size-ctrl" type="range" min="2" max="50" value="4" step="2" oninput="resizeCreatures(this.value)">
+				<label for="size-ctrl">SIZE</label>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+:root {
+  color-scheme: light dark;
+}
+
+#canvas-main {
+	display: block;
+	margin: 1% auto;
+	border: 4px solid;
+	background: black;
+}
+
+#button-container {
+	display: flex;
+	justify-content: space-evenly;
+}
